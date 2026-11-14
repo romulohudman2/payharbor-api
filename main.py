@@ -71,7 +71,7 @@ class EnviarPaystubRequest(BaseModel):
 class EnviarPaystubResponse(BaseModel):
     sucesso: bool
     mensagem: str
-    message_id: str | None = None
+    message_id: str = None
 
 
 def consultar_status_chave(chave: str):
